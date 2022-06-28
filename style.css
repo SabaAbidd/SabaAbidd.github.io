@@ -1,0 +1,176 @@
+body{
+    font-family: 'Merriweather', serif;
+    background-color: tan;
+    padding-bottom: 5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*navbar styles start*/
+a.navbar
+{
+    text-decoration: none;
+    color : black;
+    font-size: 15 px;
+}
+
+#navbar-div{
+    display: none;
+    justify-content: flex-end;
+    column-gap: 10px;
+    padding: 10px 40px;
+    font-weight: 700;
+}
+/*navbar styles end*/
+
+/*backdrop styles start*/
+#backdrop{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:space-around;
+    column-gap: 25px;
+    padding: 0 6%;
+    margin-top: 8%;
+    text-align: center;
+}
+
+image.pic{
+    width:180px;
+    height: auto;
+}
+
+@media screen and (min-width:500px)
+{
+    #backdrop{
+        flex-direction: row;
+        text-align: left;
+    }
+    #backdrop-left-column{
+        width: 52%;
+    }
+    image.pic{
+        width:280px;
+    }
+    #navbar-div{
+        display: flex;
+    }
+}  
+
+/*#backdrop > div selects all divs in backdrop*/
+
+
+#backdrop-left-column{
+    width: 100%;
+}
+#backdrop-left-column>h1{
+    font-weight: 700;
+    font-size: 35px;
+}
+#backdrop-left-column>p{
+    font-size: 16px;
+}
+#backdrop-left-button{
+background-color: rgb(71, 65, 28);
+color: silver;
+font-weight: 300;
+font-size: 15px;
+padding: 10px 20px;
+border: 0;
+}
+
+#backdrop-right-column{
+    width: 40%;
+    text-align: center;    
+}
+/*backdrop styles end*/
+
+/*Recent-blog-posts start*/
+#Recent-blog-posts{
+    background-color: rgb(202, 187, 143);
+    justify-content:space-around;
+    padding: 0 7%;
+    padding-bottom: 70px;
+  
+}
+
+#Recent-blog-posts-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Recent-blog-posts-header>h4{
+    font-weight: 300;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+#card-container{
+    display: flex;
+    column-gap: 1.5%;
+}
+div.card{
+    background-color:tan;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+div.card>h2{
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.card>span{
+    font-size: 16.5px;
+    padding: 12 px 10px;
+}
+div.card>p{
+    font-size: 14px;
+}
+/*Recent-blog-posts end*/
+
+/*Featured works start*/
+#featured-works{
+    padding: 2% 7%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+div.horizontal-card{
+    display: flex;
+    column-gap: 2.5%;
+}
+
+span.pill{
+    background-color: #142850;
+    padding: 2.5px 12px;
+    color: white;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+span.secondary-text{
+    color: rgb(219, 219, 219);
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+div.horizontal-card>div>p {
+    font-size: 13px;
+}
+div.horizontal-card>img{
+    border-radius: 5px;
+}
+
+/*Featured works end*/
+
+/*Social-media-links start*/
+#Social-media-links-section{
+    color: #142850;
+    justify-content: center;
+    display: flex;
+    column-gap: 15px;
+    font-size: 30px;
+}
+/*Social-media-links end */
